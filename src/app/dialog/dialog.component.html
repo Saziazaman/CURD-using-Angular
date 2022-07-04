@@ -1,0 +1,42 @@
+
+<h1>Add Product From </h1>
+<div mat-dialog-content>
+    <form [formGroup]="productForm">
+            <mat-form-field appearance="outline">
+                <mat-label>product Name</mat-label>
+                <input formControlName="productName" matInput placeholder="Product Name">
+            </mat-form-field>
+            <mat-form-field appearance="outline">
+                <mat-label>Product Category</mat-label>
+                <mat-select formControlName="category" placeholder="Product Category">
+                    <mat-option value="Fruite"> Fruite </mat-option>
+                    <mat-option value="Electoric"> Electoric </mat-option>
+                    <mat-option value="Vegetable"> Vegetable </mat-option>
+                  </mat-select>
+            </mat-form-field>
+            <mat-form-field appearance="outline">
+                <mat-label>Pick a Date</mat-label>
+                <input formControlName="date" matInput [matDatepicker]="picker">
+                <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                <mat-datepicker #picker></mat-datepicker>
+            </mat-form-field>
+            <label><h3> Product Freshness:</h3></label>
+              <mat-radio-group formControlName="freshness">
+                <mat-radio-button value="Fresh"> Fresh </mat-radio-button>
+                <mat-radio-button value="Used"> Used </mat-radio-button>
+                <mat-radio-button value="Reuseable"> Reuseable </mat-radio-button>
+              </mat-radio-group>
+            <mat-form-field appearance="outline">
+                <mat-label>Price</mat-label>
+                <input formControlName="price" matInput type="number" placeholder="Price">
+            </mat-form-field>
+            <mat-form-field appearance="outline">
+                <mat-label>Comment</mat-label>
+                <textarea formControlName="Comment" matInput></textarea>
+            </mat-form-field>
+        </form>
+    </div>
+<div mat-dailog-action [align]="'end'">
+    <button mat-raised-button color="warn" mat-dialog-close >Close</button>
+    <button class="save" mat-raised-button color="primary" (click)="addProduct()" >{{actionBtn}}</button>
+</div>

@@ -1,0 +1,50 @@
+{
+  "productList": [
+    {
+      "productName": "Mango",
+      "category": "Fruite",
+      "freshness": "Fresh",
+      "price": 100,
+      "Comment": "it is a fol",
+      "date": "2022-07-03T18:00:00.000Z",
+      "id": 4
+    },
+    {
+      "productName": "phone",
+      "category": "Electoric",
+      "freshness": "Used",
+      "price": 20000,
+      "Comment": "used phone",
+      "date": "2022-07-25T18:00:00.000Z",
+      "id": 5
+    },
+    {
+      "productName": "cabage",
+      "category": "Vegetable",
+      "freshness": "Fresh",
+      "price": 30,
+      "Comment": "vegetable",
+      "date": "2022-07-19T18:00:00.000Z",
+      "id": 6
+    },
+    {
+      "productName": "ghfgfc",
+      "category": "Electoric",
+      "freshness": "Used",
+      "price": 8,
+      "Comment": "ngcxfxvn",
+      "date": "2022-07-04T18:00:00.000Z",
+      "id": 7
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
